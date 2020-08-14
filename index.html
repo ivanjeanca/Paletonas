@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>Paletonas</title>
+
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Paleta de colores de JeanCode">
+  <meta name="keywords" content="Paleta de colores, jean">
+  <meta name="author" content="JeanCode">
+
+  <!-- Favicon -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+
+  <!-- Google Adsense -->
+  <script data-ad-client="ca-pub-2266827077072624" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+  <h1>Paletonas</h1>
+  <div class="wrapper">
+    <a class="paleta" href="extendida.html">
+      <div class="grid-container" id="paleta-extendida"></div>
+      <p>Paleta <span>Extendida</span> <strong>>></strong></p>
+    </a>
+    <a class="paleta" href="tania.html">
+      <div class="grid-container" id="paleta-tania"></div>
+      <p>Paleta <span>Tania</span> <strong>>></strong></p>
+    </a>
+    <a class="paleta" href="jean.html">
+      <div class="grid-container" id="paleta-jean"></div>
+      <p>Paleta <span>Jean</span> <strong>>></strong></p>
+    </a>
+  </div>
+
+  <script src="./js/fill/fillExtendedGrid.js"></script>
+  <script src="./js/fill/fillCustomGrid.js"></script>
+  <script src="./js/palette/extendedPalette.js"></script>
+  <script src="./js/palette/taniaPalette.js"></script>
+  <script src="./js/palette/jeanPalette.js"></script>
+  <script>
+    fillExtendedPalette('paleta-extendida', extendedPalette, tones, colorNames, '125px')
+    fillPalette('paleta-tania', taniaPalette, '125px')
+    fillPalette('paleta-jean', jeanPalette, '125px')
+  </script>
+</body>
+</html>

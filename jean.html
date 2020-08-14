@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>Paleta Jean</title>
+
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Paleta de colores de JeanCode">
+  <meta name="keywords" content="Paleta de colores, jean">
+  <meta name="author" content="JeanCode">
+
+  <!-- Favicon -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/baseGrid.css">
+  <link rel="stylesheet" href="./css/customPalette.css">
+
+  <!-- Google Adsense -->
+  <script data-ad-client="ca-pub-2266827077072624" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <a class="back" href="index.html"><strong><<</strong> Paleta <span>Jean</span></a>
+      </td>
+      <td>
+        <select name="format" id="format">
+          <option value="hexs">Hex: 010203</option>
+          <option value="hexc">Hex: #010203</option>
+          <option value="rgb">RGB: rgb(1, 2, 3)</option>
+          <option value="rgba">RGBA: rgba(1, 2, 3, 1)</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <div class="grid-container" id="grid-container"></div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p id="copied-color"></p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="./js/fill/fillCustomGrid.js"></script>
+  <script src="./js/lib/copyToClipboard.js"></script>
+  <script src="./js/palette/jeanPalette.js"></script>
+  <script>
+    fillPalette('grid-container', jeanPalette, '100vh - 70px')
+  </script>
+</body>
+</html>

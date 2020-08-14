@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+table {
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+}
+
+table td:first-child {
+  padding-right: 5px;
+}
+
+.back, #format {
+  position: relative;
+
+  background: #e7e7e7;
+  border-radius: 5px;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  line-height: 20px;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  color: black;
+  text-decoration: none;
+
+  -webkit-transition: background 0.35s ease-in-out;
+  -moz-transition: background 0.35s ease-in-out;
+  -ms-transition: background 0.35s ease-in-out;
+  -o-transition: background 0.35s ease-in-out;
+  transition: background 0.35s ease-in-out;
+}
+
+.back {
+  top: 7px;
+  padding: 9px 5px 7px 5px;
+}
+
+.back strong {
+  position: relative;
+  top: 1px;
+  letter-spacing: -5px;
+  font-weight: 400;
+}
+
+.back span {
+  font-weight: 300;
+  color: #939393;
+}
+
+#format {
+  top: 5px;
+  padding: 8px 5px 8px 5px;
+}
+
+#format:focus {
+  outline: none;
+}
+
+.back:hover, #format:hover {
+  background: #D2D2D2;
+}
+
+.grid-container {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  text-align: right;
+  color: white;
+  text-rendering: optimizeLegibility;
+  font-size: 15px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0px;
+  margin: 10px;
+
+  -webkit-box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.33);
+  -moz-box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.33);
+  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.33);
+}
+
+.color {
+  position: relative;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  padding: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -ms-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+.color:hover {
+  opacity: 0.85;
+}
+
+.color::after {
+  content: 'Copiar';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 4px;
+  padding: 4px;
+  line-height: 1.25;
+  opacity: 0;
+  
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -ms-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+.color:hover::after {
+  opacity: 1;
+}
+
+.grid-container .black.color::after {
+  border: 2px solid black;
+  color: black;
+  font-weight: 600;
+}
+.grid-container .white.color::after {
+  border: 2px solid white;
+  color: white;
+  font-weight: 500;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-top: 0px;
+  left: 10px;
+  top: 60px;
+  width: calc(100% - 20px);
+  height: calc(100% - 60px);
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.66);
+}
+
+.modal-content {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  padding: 20px;
+  font-size: 75px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  color: white;
+}
+
+@media (max-width: 825px), (max-height: 600px) {  
+  .back {
+    top: 4px;
+    padding: 9px 5px 9px 5px;
+  }
+  .back strong {
+    letter-spacing: -3px;
+  }
+  .back, #format {
+    line-height: 15px;
+    font-size: 15px;
+  }
+  .grid-container {
+    font-size: 0px;
+  }
+  .color::after {
+    display: none;
+  }
+  .color:hover::after {
+    display: none;
+  }
+  .modal-content {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 490px) { 
+  .back, #format {
+    line-height: 13px;
+    font-size: 13px;
+  }
+  .modal-content {
+    font-size: 31px;
+  }
+}
+
+@media (max-width: 355px) { 
+  .back, #format {
+    line-height: 11px;
+    font-size: 11px;
+  }
+  .modal-content {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 280px) { 
+  .back, #format {
+    line-height: 8px;
+    font-size: 8px;
+  }
+  .modal-content {
+    font-size: 22px;
+  }
+}
