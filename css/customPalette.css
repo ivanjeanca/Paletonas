@@ -45,7 +45,7 @@ table td:first-child {
 
 .back {
   top: 7px;
-  padding: 9px 5px 7px 5px;
+  padding: 9px 7px 7px 7px;
 }
 
 .back strong {
@@ -62,7 +62,7 @@ table td:first-child {
 
 #format {
   top: 5px;
-  padding: 8px 5px 8px 5px;
+  padding: 8px 7px 8px 7px;
 }
 
 #format:focus {

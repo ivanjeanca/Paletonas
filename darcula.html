@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <title>Paleta Extendida</title>
+  <title>Paleta Darcula</title>
 
   <!-- Meta tags -->
   <meta charset="utf-8">
@@ -15,6 +15,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./css/baseGrid.css">
+  <link rel="stylesheet" href="./css/customPalette.css">
 
   <!-- Google Adsense -->
   <script data-ad-client="ca-pub-2266827077072624" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -24,7 +25,7 @@
   <table>
     <tr>
       <td>
-        <a class="back" href="index.html"><strong><<</strong> Paleta <span>Extendida</span></a>
+        <a class="back" href="index.html"><strong><<</strong> Paleta <span>Darcula</span></a>
       </td>
       <td>
         <select name="format" id="format">
@@ -44,11 +45,11 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="./js/fill/fillExtendedGrid.js"></script>
+  <script src="./js/fill/fillCustomGrid.js"></script>
   <script src="./js/lib/copyToClipboard.js"></script>
-  <script src="./js/palette/extended.js"></script>
+  <script src="./js/palette/darcula.js"></script>
   <script>
-    fillExtendedPalette('grid-container', extended, tones, colorNames, '100vh - 70px')
+    fillPalette('grid-container', darcula, '100vh - 70px')
   </script>
 </body>
 </html>

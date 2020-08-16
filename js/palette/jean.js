@@ -2,7 +2,7 @@
   [Color, Code, Info]
 */
 
-let jeanPalette = [
+let jean = [
   ['Pino', '04240a', 1],
   ['Moho', '377343', 2],
   ['Hoja', '7fb089', 2],

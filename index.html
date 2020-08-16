@@ -23,29 +23,54 @@
 <body>
   <h1>Paletonas</h1>
   <div class="wrapper">
-    <a class="paleta" href="extendida.html">
-      <div class="grid-container" id="paleta-extendida"></div>
+
+    <a class="palette" href="extendida.html">
+      <div class="grid-container" id="extended-palette"></div>
       <p>Paleta <span>Extendida</span> <strong>>></strong></p>
     </a>
-    <a class="paleta" href="tania.html">
-      <div class="grid-container" id="paleta-tania"></div>
+
+    <a class="palette" href="tania.html">
+      <div class="grid-container" id="tania-palette"></div>
       <p>Paleta <span>Tania</span> <strong>>></strong></p>
     </a>
-    <a class="paleta" href="jean.html">
-      <div class="grid-container" id="paleta-jean"></div>
+
+    <a class="palette" href="jean.html">
+      <div class="grid-container" id="jean-palette"></div>
       <p>Paleta <span>Jean</span> <strong>>></strong></p>
     </a>
+
+    <a class="palette" href="whatsapp-dark.html">
+      <div class="grid-container" id="whatsapp-dark"></div>
+      <p>Paleta <span>Whatsapp Dark</span> <strong>>></strong></p>
+    </a>
+
+    <a class="palette" href="darcula.html">
+      <div class="grid-container" id="darcula"></div>
+      <p>Paleta <span>Darcula</span> <strong>>></strong></p>
+    </a>
+
+    <a class="palette" href="spotify.html">
+      <div class="grid-container" id="spotify"></div>
+      <p>Paleta <span>Spotify</span> <strong>>></strong></p>
+    </a>
+
   </div>
 
   <script src="./js/fill/fillExtendedGrid.js"></script>
   <script src="./js/fill/fillCustomGrid.js"></script>
-  <script src="./js/palette/extendedPalette.js"></script>
-  <script src="./js/palette/taniaPalette.js"></script>
-  <script src="./js/palette/jeanPalette.js"></script>
+  <script src="./js/palette/extended.js"></script>
+  <script src="./js/palette/tania.js"></script>
+  <script src="./js/palette/jean.js"></script>
+  <script src="./js/palette/whatsappDark.js"></script>
+  <script src="./js/palette/darcula.js"></script>
+  <script src="./js/palette/spotify.js"></script>
   <script>
-    fillExtendedPalette('paleta-extendida', extendedPalette, tones, colorNames, '125px')
-    fillPalette('paleta-tania', taniaPalette, '125px')
-    fillPalette('paleta-jean', jeanPalette, '125px')
+    fillExtendedPalette('extended-palette', extended, tones, colorNames, '125px')
+    fillPalette('tania-palette', tania, '125px')
+    fillPalette('jean-palette', jean, '125px')
+    fillPalette('whatsapp-dark', whatsappDark, '125px')
+    fillPalette('darcula', darcula, '125px')
+    fillPalette('spotify', spotify, '125px')
   </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-let extendedPalette = [
+let extended = [
   'fff6be','ffe442','d5b600','6e5e00','bdaf5e','544e2a', // Amarillo
   'd5ffbe','7aec3d','41b900','216000','6ca150','304724', // Verde
   'beffef','35cba5','008a68','004836','387062','172e28', // Aqua
